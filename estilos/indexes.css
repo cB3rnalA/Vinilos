@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+}
+.container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.easycontent_container{
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(17, 16, 16, 0.875);
+    
+}
+#easycontent_container_1{
+    padding-bottom: 342px;
+    padding-top: 220px;
+}
