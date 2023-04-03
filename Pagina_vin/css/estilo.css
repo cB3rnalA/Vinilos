@@ -27,7 +27,7 @@ header {
 	right: 0;
 	background: #ffffff;
 	box-shadow: 0 5px 10px rgba(0 0, 0, .1);
-	padding: 0px 7%;
+	padding: 0px 10%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -38,6 +38,10 @@ header .logo {
 	font-weight: bolder;
 	font-size: 20px;
 	color: #333;
+}
+
+.navbar{
+	margin-top: 3%;
 }
 
 header .navbar ul {
@@ -145,20 +149,25 @@ header label {
 	height: 40vh;
 }
 
-/* carrusel */
-.carousel-item{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.card{
+	margin: 7px;
 }
 
+/* carrusel */
+.carousel-item{
+	padding-left: 40%;
+}
 
+.carousel-indicators{
+	padding-top: 10%;/* Revisar que quede bien centrado xd */
+	padding-left: 14%;
+
+}
 
 /* footer */
 html {
 	height: 100%;
 }
-
 
 * {
 	padding: 0;
