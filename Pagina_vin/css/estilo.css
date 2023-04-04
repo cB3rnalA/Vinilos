@@ -153,16 +153,7 @@ header label {
 	margin: 7px;
 }
 
-/* carrusel */
-.carousel-item{
-	padding-left: 40%;
-}
 
-.carousel-indicators{
-	padding-top: 10%;/* Revisar que quede bien centrado xd */
-	padding-left: 14%;
-
-}
 
 /* footer */
 html {
@@ -292,3 +283,37 @@ footer {
 		width: 40%;
 	}
 }
+@font-face {
+	font-family: vinilo;
+	src: url(../fuentes/vinilo.ttf) format("truetype");
+	}
+	.fuente_vinilo{
+		font-family: vinilo;
+		font-size: 25px;
+	}
+/*DEL NICO 
+.left para margenes de los productos que nose pq no los puedo ocupar*/
+	.left {
+		float: left;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+/*esto tiene que ver con la imgenes de los productos*/
+/*Conecta con esta y las sigientes*/
+.img1{
+animation-name: girarb;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+display: inline-block;
+}
+
+.no-gif, .efecto:hover .gif{
+    display: flex;
+}
+.gif , .efecto:hover .no-gif{
+    display: none;
+}  
+
