@@ -166,7 +166,7 @@ html {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	list-style-type: none;
 	text-decoration: none;
-	color: rgb(255, 255, 255);
+	
 }
 
 main {
@@ -179,6 +179,7 @@ h1 {
 
 footer {
 	position: relative;
+	margin-top: 10%;
 	bottom: 0;
 	left: 0;
 	width: 100%;
