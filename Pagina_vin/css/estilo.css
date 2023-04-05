@@ -170,9 +170,23 @@ header label {
 }
 
 .card{
-	margin: 7px;
+	background-color: #e0e0e0;
+	text-align: center;
 }
+.card h3{
+	color: #000000;
+	padding: .5rem 0;
+	font-size: 2rem;
 
+}
+.card p{
+	color: #000000;
+	font-size: 1.5rem;
+}
+.precio{
+	color: #000000;
+	font-size: 1.25rem;
+}
 
 
 /* footer */
@@ -311,29 +325,17 @@ footer {
 		font-family: vinilo;
 		font-size: 25px;
 	}
-/*DEL NICO 
-.left para margenes de los productos que nose pq no los puedo ocupar*/
-	.left {
-		float: left;
-		margin-right: 10px;
-		margin-left: 10px;
-		margin-bottom: 20px;
-		margin-top: 20px;
-	}
-/*esto tiene que ver con la imgenes de los productos*/
-/*Conecta con esta y las sigientes*/
-.img1{
-animation-name: girarb;
-animation-duration: 20s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-display: inline-block;
+/*DEL NICO*/
+.left {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
-
 .no-gif, .efecto:hover .gif{
     display: flex;
 }
 .gif , .efecto:hover .no-gif{
     display: none;
 }  
-
