@@ -177,11 +177,7 @@ img{
     .product-imgs{
         display: flex;
         padding-top: 30%;
-<<<<<<< HEAD
-        width: 500px;
-=======
         width: 600px;
->>>>>>> vinilosindividual
         flex-direction: column;
         justify-content: center;
     }
