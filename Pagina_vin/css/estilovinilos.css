@@ -442,3 +442,11 @@ body{
         padding-top: 30%;
     }
 }
+@font-face {
+	font-family: vinilo;
+	src: url(../fuentes/vinilo.ttf) format("truetype");
+	}
+	.fuente_vinilo{
+		font-family: vinilo;
+		font-size: 25px;
+	}
