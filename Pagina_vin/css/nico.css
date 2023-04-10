@@ -1,18 +1,16 @@
 table{
     table-layout: fixed;
-    width: 200px;
+    width: min-content;
 }
 
 th, td {
-    width: 100px;
+    width: min-content;
     word-wrap: break-word;
     text-align: center;
     font-size: 20px;
 }
 .btn{
     background: black;
-    width: 100px;
-    height: 40px;
     color: white;
     margin-top: 10px
 }
