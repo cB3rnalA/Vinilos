@@ -278,6 +278,8 @@ footer {
 	padding-bottom: .6rem;
 	margin: 1rem 0;
 	position: relative;
+	color: #e0e0e0;
+	font-weight: bold;
 }
 
 .titulos-footer:before {
@@ -288,8 +290,7 @@ footer {
 	bottom: 0;
 	left: 0%;
 	border-bottom: .2rem solid #9ed800;
-	color: #e0e0e0;
-	font-weight: bold;
+
 }
 
 .sobre-mi p {
