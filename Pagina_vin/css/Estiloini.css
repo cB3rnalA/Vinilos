@@ -16,7 +16,6 @@ body {
 .marg {
 	margin-right: 10px;
 }
-
 header {
 	position: fixed;
 	top: 0;
@@ -38,7 +37,8 @@ header .logo {
 }
 
 .navbar{
-	margin-top: 3%;
+	margin-top: 0%;
+	padding-top: 4%;
 }
 
 header .navbar ul {
@@ -94,21 +94,19 @@ header label {
 
 /* Boton de perfil */
 .button_perf {
-	background-color: #13AFDF;
+	
 	border-radius: 2vh;
 	border: none;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
-	padding: 2% 2%;
+	padding: 1% 1%;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	width: auto;
+	text-decoration: none;
 	}
-	.button_perf {
-	background-color: #FB7E29;
-	color: #fff;
-	}
+
 
 
 @media(max-width:991px) {
@@ -263,10 +261,11 @@ h1 {
 
 footer {
 	position: relative;
+	margin-top: 10%;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgb(102, 52, 12);
+	background-color: #303030;
 }
 
 .contenedor {
@@ -283,6 +282,8 @@ footer {
 	padding-bottom: .6rem;
 	margin: 1rem 0;
 	position: relative;
+	color: #e0e0e0;
+	font-weight: bold;
 }
 
 .titulos-footer:before {
@@ -312,10 +313,11 @@ footer {
 	padding: .6rem;
 	background-color: #303030;
 	border-radius: .2rem;
+	color: rgb(255, 255, 255)
 }
 
 .redes-sociales a:hover {
-	background-color: #c78408;
+	background-color: #e0e0e0;
 }
 
 .fa-brands {
@@ -354,7 +356,7 @@ footer {
 	font-size: .9rem;
 	line-height: 1.4rem;
 	background-color: #ffffff;
-	background-color: #b16808;
+	background-color: #e0e0e0;
 	padding: .5rem;
 }
 
