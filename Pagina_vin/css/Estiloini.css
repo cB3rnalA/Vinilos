@@ -323,6 +323,10 @@ footer {
 .fa-brands {
 	font-size: 1.3rem;
 }
+.navegacion{
+	margin-right: 100px;
+
+}
 
 .navegacion li a {
 	display: inline-block;
