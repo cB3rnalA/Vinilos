@@ -159,7 +159,7 @@ header label {
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: #d0cbd6;
     }
     .card-body{
         display: grid;
@@ -170,7 +170,7 @@ header label {
     .social_icon span{
     font-size: 60px;
     margin-left: 10px;
-    color: #FFC312;
+    color: #171f4a;
     }
     
     .social_icon span:hover{
@@ -189,23 +189,31 @@ header label {
     }
     
     .input-group-prepend span{
-    width: 50px;
+    width: 35px;
     height: 34px;
-    background-color: #FFC312;
-    color: black;
-    border:0 !important;
+    background-color: #171f4a;
+    color: white;
+    border:0;
+	justify-content: center;
     }
     
     input:focus{
-    outline: 0 0 0 0  !important;
-    box-shadow: 0 0 0 0 !important;
+    outline: 0 0 0 0;
+    box-shadow: 0 0 0 0;
     
     }
+
     
-    .remember{
-    color: white;
-    }
-    
+
+	.btn{
+		width: 100px;
+		height: 30px;
+	}
+
+	.btn:hover{
+		opacity: 0.8;
+	}
+
     .remember input
     {
     width: 20px;
@@ -213,29 +221,6 @@ header label {
     margin-left: 15px;
     margin-right: 5px;
     }
-    
-    .login_btn{
-    color: black;
-    background-color: #FFC312;
-    width: 100px;
-    }
-    
-    .login_btn:hover{
-    color: black;
-    background-color: white;
-    }
-    
-    .links{
-    color: white;
-    }
-    
-    .links a{
-    margin-left: 4px;
-    }
-
-
-
-
 
 /* footer */
 html {
