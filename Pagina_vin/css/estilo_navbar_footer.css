@@ -84,6 +84,12 @@ footer {
 	font-size: 1.3rem;
 }
 
+.navegacion{
+	margin-right: 100px;
+	display: block;
+
+}
+
 .navegacion li a {
 	display: inline-block;
 	margin-bottom: .8rem;
