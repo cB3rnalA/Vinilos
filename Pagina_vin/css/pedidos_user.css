@@ -1,0 +1,10 @@
+.cent{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tat{
+    margin-top: 5%;/* se puede sacar, es para centrarlo mas verticalmente */
+    width: 80%; ;
+}
