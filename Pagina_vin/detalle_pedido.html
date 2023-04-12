@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,70 +16,83 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--CREO QUE SE DEBE ELIMINAR-->
     <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <!-- menu -->
     <header style="height: 10vh; ">
-        <a href="Admin_Index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="img/vinilo.png"
+        <a href="index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="img/vinilo.png"
                 height="60px" style="  padding-right: 20px;" alt="Logo"> El sobre del Vinilo</a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
             <ul class="marg">
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Vinilos +</a>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="Vinilos.html">Vinilos</a> </li>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Estilos +</a>
                     <ul>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="Admin_vinilos.html">Gestionar
-                                vinilos</a>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_pop/vin_pop.html">Pop</a>
                         </li>
                         <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="Admin_vinilos_oferta.html">Poner en oferta</a>
+                                href="Estilos/vin_rock/vin_rock.html">Rock</a>
+                        </li>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_metal/vin_metal.html">Metal</a>
                         </li>
                     </ul>
                 </li>
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Usuarios +</a>
-                    <ul>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="Admin_usuarios.html">Gestionar
-                                usuarios</a>
-                        </li>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="">Algo mas aqui</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="fuente_vinilo" style="text-decoration: none" href="Admin_pedidos.html">Pedidos</a>
-                </li>
-                <li> <a class="button_perf fuente_vinilo " href="index.html">Salir</a></li>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="ofertas.html">Ofertas</a> </li>
+                <li> <a class="button_perf fuente_vinilo " href="Inicio_sesion.html">Perfil</a></li>
             </ul>
-
         </nav>
     </header>
-    <main style="margin-top: 12vh;">
-        <!--AQUI VA TODO LO QUE LE QUEREMOS PONER A NUESTRA PAGINA-->
-        <form class="row g-3 container d-flex" style="margin: auto;">
+    <!--AQUI VA EL FONDO-->
+    <main style="margin-top: 20vh;"><!-- Fondo mas margen entre menu y main -->
+        <!-- Contenido -->
+        <!-- Carousel -->
+
+        <!--TABLAS CON PRODUCTO PA COPRAR-->
+        <!--FINAL TABLA-->
+        <form class="row g-3 container d-flex" style="height: 300px; text-align: center;">
             <div class="col-md-8">
-                <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <label style="width:120px;">Nombre</label>
+                <input disabled style="width:150px;" type="text" name="Nombre" placeholder="Wacoldo Soto">
             </div>
             <div class="col-md-8">
-                <label for="inputPassword4" class="form-label">E-mail</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <label style="width:120px;">Direccion</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="Una direccion x">
             </div>
-            <div class="col-8">
-                <label for="inputAddress" class="form-label">Celular</label>
-                <input type="text" class="form-control" id="inputAddress">
+            <div class="col-md-8">
+                <label style="width:120px;">Nombre de vinilos</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="Vinilo Dreamtheater">
             </div>
-            <div class="col-8">
-                <label for="inputAddress2" class="form-label">Cargo</label>
-                <input type="text" class="form-control" id="inputAddress2">
+            <div class="col-md-8">
+                <label style="width:120px;">Total</label>
+                <input disabled style="width:150px;"  type="text" name="" placeholder="$30.000">
             </div>
-            <div class="col-5">
-                <a href="Admin_Index.html"><button type="button" class="btn ">Agregar</button></a>
+            <div class="col-md-8">
+                <label style="width:120px;">Tipo tarjeta</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="MasterCard">
             </div>
-            <div class="col-2">
-                <a href="Admin_Index.html"><button type="button" class="btn ">Cancelar</button></a>
+            <div class="col-md-8">
+                <label style="width:120px;">NUmero tarjeta</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="1231-****-****">
+            </div>
+            <div class="col-md-8">
+                <label style="width:120px;">Fecha envio</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="01/01/01">
+            </div>
+            <div class="col-md-8">
+                <label style="width:120px;">Fecha entrega</label>
+                <input disabled style="width:150px;" type="text" name="" placeholder="02/02/02">
+            </div>
+            <div class="col-md-8" >
+                <a href="pedidos_user.html"><button type="button" class="btn ">Volver a pedidos</button></a>
             </div>
         </form>
+        <!--TABLAS CON PRODUCTO PA COPRAR-->
     </main>
     <!-- Footer -->
     <footer>
@@ -114,7 +128,12 @@
             </div>
             <div class="navegacion">
                 <h2 class="titulos-footer">Medios de pago</h2>
-
+                <li>
+                    <i class="fa fa-cc-visa" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-mastercard" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-amex" style="font-size:30px;color:white"></i>
+                    <i class="fa fa-cc-diners-club" style="font-size:30px; color:white"></i>
+                </li>
             </div>
 
 
@@ -123,7 +142,6 @@
             Copyright © 2023 Vinilos por 'sopaipillas'
         </div>
     </footer>
-
 </body>
 
 </html>
