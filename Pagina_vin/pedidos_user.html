@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--CREO QUE SE DEBE ELIMINAR-->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/pedidos_user.css">
 </head>
 
 <body>
@@ -25,27 +26,96 @@
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
             <ul class="marg">
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="vinilos_user.html">Pedidos</a></li>
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Datos Personales</a>
-                    <ul>
-                        <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="info_index_user.html">informacion</a>
-                        </li>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="metodoP_user.html">metodo de
-                                pago</a>
-                        </li>
-
-                    </ul>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="pedidos_user.html">Pedidos</a></li>
+                <li><a class="fuente_vinilo" style="text-decoration: none" href="info_index_user.html">informacion</a>
                 </li>
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="direccionse_user.html">direcciones</a>
+                <li><a class="fuente_vinilo" style="text-decoration: none" href="metodoP_user.html">metodo de pago</a>
                 </li>
-                <li> <a class="button_perf fuente_vinilo" href="Inicio_sesion.html"><i class="fa fa-user"></i></a></li>
+                <li> <a class="button_perf fuente_vinilo" href="info_index_user.html"><i class="fa fa-user"></i></a></li>
                 <li> <a class="button_perf fuente_vinilo" href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
+    <main style="margin-top: 12vh;">
+        <div class="cent">
+            <table class="tat table border">
+                <thead>
+                    <tr>
+                        <th scope="col-3">Fecha Pedido</th>
+                        <th scope="col-3">Valor Total</th>
+                        <th scope="col-3">Cantidad de articulos</th>
+                        <th scope="col-3">detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>19/04/2023</th>
+                        <td>$15.980</td>
+                        <td>1</td>
+                        <td><a href="#">ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <th>20/02/2023</th>
+                        <td>$45.990</td>
+                        <td>3</td>
+                        <td><a href="#">ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <th>07/01/2023</th>
+                        <td>$70.000</td>
+                        <td>5</td>
+                        <td><a href="#">ver detalle</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contenedor">
+            <div class="sobre-mi">
+                <h2 class="titulos-footer">Tienda</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At a quos error sapiente asperiores sed
+                    non, accusamus quaerat praesentium! Laudantium saepe doloribus aut rem dolore minima. Quibusdam
+                    expedita nisi eius.</p>
+                <ul class="redes-sociales"><!-- redes sociales -->
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="contactanos">
+                <h2 class="titulos-footer">Contáctanos</h2>
+                <ul class="informacion-contacto">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>Una direccion random<br> Concepcion, Biobio</p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>+123456789 <br> +999999999</p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>correo@duocuc.cl</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="navegacion">
+                <h2 class="titulos-footer">Medios de pago</h2>
+
+            </div>
+
+
+        </div>
+        <div class="copy">
+            Copyright © 2023 Vinilos por 'sopaipillas'
+        </div>
+    </footer>
 </body>
 
 </html>
