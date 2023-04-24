@@ -16,6 +16,7 @@
     <!--CREO QUE SE DEBE ELIMINAR-->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/detallecompra.css">
+    <script src="js/metpago.js"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                         <i class="fab fa-cc-visa" style="color:navy; font-size: 50px;"></i>
                     </div>
                     <label>Nombre</label>
-                    <input type="text" name="Nombre" value="Wacoldo Soto">
+                    <input id="name" type="text" name="Nombre" value="Wacoldo Soto">
                     <label>Numero de tarjeta</label>
                     <input type="text" name="Numero de tarjeta" value="1111-2222-3333-4444">
                     <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
@@ -70,14 +71,15 @@
                         <i class="fab fa-cc-discover" style="color:orange;"></i>
                     </div>
                     <label>Nombre</label>
-                                <input type="text" name="Nombre" placeholder="Wacoldo Soto">
-                                <label>Numero de tarjeta</label>
-                                <input type="text" name="Numero de tarjeta" placeholder="1111-2222-3333-4444">
-                                <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
-                                <input style="width: 50%;" type="text" name="Fecha Expiración" placeholder="12/26"><input
-                                style="width: 50%;" type="text" name="CCV" placeholder="111">
+                        <input id="tarjnueva" type="text" name="Nombre" onblur="ValidarTexto()" placeholder="Wacoldo Soto">
+                        <small id="help_nom" ></small> <br>
+                        <label>Numero de tarjeta</label>
+                        <input id="numtarj" type="text" name="Numero de tarjeta" placeholder="1111-2222-3333-4444">
+                        <small id="help_num"></small> <br>
+                        <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
+                        <input style="width: 50%;" type="text" name="Fecha Expiración" placeholder="12/26"><input
+                        style="width: 50%;" type="password" name="CCV" placeholder="111">
                         <div class="der"><input type="submit" value="Guardar" class="btn"></div>
-                    
                     
                 </div>
             </div>
