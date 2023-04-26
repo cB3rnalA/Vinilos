@@ -70,16 +70,16 @@
                         <i class="fab fa-cc-mastercard" style="color:red;"></i>
                         <i class="fab fa-cc-discover" style="color:orange;"></i>
                     </div>
-                    <label>Nombre</label>
-                        <input id="tarjnueva" type="text" name="Nombre" onblur="ValidarTexto()" placeholder="Wacoldo Soto">
-                        <small id="help_nom" ></small> <br>
+                    <label>Nombre</label><!-- onblur="ValidarTexto()"para mostrar de una forma el rellene el campo -->
+                        <input id="nomtarjnueva" type="text" name="Nombre"  placeholder="Wacoldo Soto">
+                        <small id="error_nom" ></small> <br>
                         <label>Numero de tarjeta</label>
                         <input id="numtarj" type="text" name="Numero de tarjeta" placeholder="1111-2222-3333-4444">
                         <small id="help_num"></small> <br>
                         <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
                         <input style="width: 50%;" type="text" name="Fecha Expiración" placeholder="12/26"><input
                         style="width: 50%;" type="password" name="CCV" placeholder="111">
-                        <div class="der"><input type="submit" value="Guardar" class="btn"></div>
+                        <div class="der"><input id="button" type="submit" value="Guardar" class="btn"></div>
                     
                 </div>
             </div>
