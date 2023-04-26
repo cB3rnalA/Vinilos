@@ -15,13 +15,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--CREO QUE SE DEBE ELIMINAR-->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/nico.css">
 </head>
 
 <body>
     <!-- menu -->
     <header style="height: 10vh; ">
         <a href="Admin_Index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="img/vinilo.png"
-            height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
+                height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
@@ -54,34 +55,112 @@
         </nav>
     </header>
     <main style="margin-top: 12vh;">
-        <!--AQUI VA TODO LO QUE LE QUEREMOS PONER A NUESTRA PAGINA-->
-        <form class="row g-3 container d-flex" style="margin: auto;">
-            <div class="col-md-8">
-                <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-8">
-                <label for="inputPassword4" class="form-label">E-mail</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-8">
-                <label for="inputAddress" class="form-label">Celular</label>
-                <input type="text" class="form-control" id="inputAddress">
-            </div>
-            <div class="col-8">
-                <label for="inputAddress2" class="form-label">Cargo</label>
-                <input type="text" class="form-control" id="inputAddress2">
-            </div>
-            <div class="col-5">
-                <a href="Admin_Index.html"><button type="button" class="btn ">Agregar</button></a>
-            </div>
-            <div class="col-2">
-                <a href="Admin_Index.html"><button type="button" class="btn ">Cancelar</button></a>
-            </div>
-        </form>
+        <div class="container">
+            <!--AQUI VA TODO LO QUE LE QUEREMOS PONER A NUESTRA PAGINA-->
+            <form action="" class="formulario" id="formulario">
+                <!-- Grupo: Usuario -->
+                <div class="formulario__grupo" id="grupo__rut">
+                    <label for="rut" class="formulario__label">Rut</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="rut" id="rut" placeholder="209942917">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Solo numeros sin punto ni guion</p>
+                </div>
+
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nico navarro">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 40 letras</p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                        guion bajo.</p>
+                </div>
+
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </div>
+
+                <!-- Grupo: Contraseña 2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono tiene 9 digitos
+                        dígitos.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__cargo">
+                    <label for="cargo" class="formulario__label">Cargo</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="cargo" id="cargo"
+                            placeholder="Encargado de vinilos pagina web">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El cargo tiene que ser de 4 a 60 letras.</p>
+                </div>
+
+                <br>
+                
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                    </label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente. </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                    </p>
+                </div>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="button" class="formulario__btn"><a href="Admin_Index.html">Volver atras</a></button>
+                </div>
+        </div>
     </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/Formulario_admin.js"></script>
+
     <!-- Footer -->
-    <footer>
+    <footer class="piedepagina">
         <div class="contenedor">
             <div class="sobre-mi">
                 <h2 class="titulos-footer">Tienda</h2>
@@ -114,9 +193,16 @@
             </div>
             <div class="navegacion">
                 <h2 class="titulos-footer">Medios de pago</h2>
-
+                <li>
+                    <i class="fa fa-cc-visa" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-mastercard" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-amex" style="font-size:30px;color:white"></i>
+                    <i class="fa fa-cc-diners-club" style="font-size:30px; color:white"></i>
+                </li>
             </div>
 
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         </div>
         <div class="copy">
