@@ -2,7 +2,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	rut: /^[0-9]{8,9}$/, // Letras, numeros, guion y guion_bajo
+	rut: /^([1-9]{1}|([1-9]{1}[0-9]{1}))\.(\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)/, // EL rut comoletio con . y -
 	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -91,24 +91,26 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
 	if(campos.rut && campos.nombre && campos.password && campos.correo && campos.telefono && campos.cargo && terminos.checked ){
-		formulario.reset();
+		
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+		}, 3000);
 
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
+		
+		//COLOCAR QUE LA WEA SE VEA EN LA URL
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         setTimeout(() => {
 			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-		}, 5000);
+		}, 3000);
+		e.preventDefault();
 	}
-});
+})
