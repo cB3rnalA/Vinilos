@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilo_registro_new.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header style="height: 10vh; ">
+        <a href="index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="img/vinilo.png"
+                height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul class="marg">
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="Vinilos.html">Vinilos</a> </li>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Estilos +</a>
+                    <ul>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_pop/vin_pop.html">Pop</a>
+                        </li>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_rock/vin_rock.html">Rock</a>
+                        </li>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_metal/vin_metal.html">Metal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="ofertas.html">Ofertas</a> </li>
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="Inicio_sesion.html"><i
+                            class="fa fa-user"></i></a></li>
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="carrito.html"><i
+                            class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="col-sm-3"></div>
+
+
+                    <h1>Register</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" required>
+
+                    <label for="apellido"><b>Apellido</b></label>
+                    <input type="text" placeholder="Ingrese su Apellido" name="apellido" id="apellido" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                    <hr>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                    <div style="justify-content: center; text-align: center;">
+                        <button type="submit" class="registerbtn" style="justify-content: center;">Register</button>
+                    </div>
+
+                    <div class="container signin" style="width: 80%; padding-bottom: 1px; padding-top: 10px;">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
