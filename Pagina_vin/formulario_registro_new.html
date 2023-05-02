@@ -47,14 +47,11 @@
     <form action="Formulario_registro_new.html" class="formulario" id="formulario" method="get">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6">
-                    <div class="col-sm-3"></div>
-
-
-                    <h3><b>Registro</b></h3>
-                    <h6>Por favor completa el formulario para crear una cuenta.</h6>
+                <h3><b>Registro</b></h3>
+                <h6>Por favor completa el formulario para crear una cuenta.</h6>
                     <hr>
+                <div class="col-sm-6" >
+                
 
                     <div class="formulario_registro" id="registro_rut">
                         <label for="rut" class="formulario_label"><b>Rut</b></label>
@@ -71,6 +68,9 @@
 
                     <label for="Correo"><b>Email</b></label>
                     <input type="text" placeholder="Ingrese su correo" name="email" id="email" required>
+                    </div>
+
+                    <div class="col-sm-6">
 
                     <label for="direccion"><b>Dirección</b></label>
                     <input type="text" placeholder="Ingrese su dirección Ej: Calle dos 123" name="direccion" id="direccion" required>
@@ -87,7 +87,8 @@
                     <label for="psw-repeat"><b>Repeat Password</b></label>
                     <input type="password" placeholder="Reingrese su contraseña" name="psw-repeat" id="psw-repeat" required>
                     
-                    <div class="formulario_grupo" id="grupo_terminos">
+                </div>
+                    <div class="formulario_grupo" id="grupo_terminos" style="text-align: center; margin-top: 10px;">
                     <label class="formulario__label">
                         <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
                         Acepto los <a href="#"> Terminos y Condiciones</a>
@@ -95,14 +96,15 @@
                     </div>
 
                     <div style="justify-content: center; text-align: center; margin-top: 10px;">
-                        <button type="submit" class="registerbtn" style="justify-content: center;">Registrarse</button>
+                        <button type="submit" class="registerbtn" style="width: 40%; justify-content: center;">Registrarse</button>
                     </div>
 
-                    <div class="container signin" style="width: 80%; padding-bottom: 1px; padding-top: 10px;">
+                    <div class="container signin" style="width: 39.5%; padding-bottom: 1px; padding-top: 10px;">
                         <p>¿Ya tienes una cuenta? <a href="Inicio_sesion.html">Inicia sesión</a>.</p>
                     </div>
 
-                </div>
+                    
+                
             </div>
         </div>
 
