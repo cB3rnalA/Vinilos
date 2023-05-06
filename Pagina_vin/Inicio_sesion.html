@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinilos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Revisar iconos redes sociales -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,15 +13,19 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/n5pm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/Estiloini.css">
+    <!--CREO QUE SE DEBE ELIMINAR-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_navbar_footer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Inicio de sesion</title>
+
+
 </head>
 
 <body>
-    <header style="height: 8vh; ">
+    <!-- menu -->
+    <header style="height: 10vh; ">
         <a href="index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="img/vinilo.png"
-            height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
+                height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
@@ -28,77 +33,91 @@
                 <li> <a class="fuente_vinilo" style="text-decoration: none" href="Vinilos.html">Vinilos</a> </li>
                 <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Estilos +</a>
                     <ul>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="Estilos/vin_pop/vin_pop.html">Pop</a>
-                        </li>
-                        <li><a class="fuente_vinilo" style="text-decoration: none" href="Estilos/vin_rock/vin_rock.html">Rock</a>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_pop/vin_pop.html">Pop</a>
                         </li>
                         <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="Estilos/vin_metal/vin_metal.html">Metal</a></li>
+                                href="Estilos/vin_rock/vin_rock.html">Rock</a>
+                        </li>
+                        <li><a class="fuente_vinilo" style="text-decoration: none"
+                                href="Estilos/vin_metal/vin_metal.html">Metal</a>
+                        </li>
                     </ul>
                 </li>
                 <li> <a class="fuente_vinilo" style="text-decoration: none" href="ofertas.html">Ofertas</a> </li>
-                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="Inicio_sesion.html"><i class="fa fa-user"></i></a></li>
-                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="carrito.html"><i class="fa fa-shopping-cart"></i></a></li>
-       
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="Inicio_sesion.html"><i
+                            class="fa fa-user"></i></a></li>
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="carrito.html"><i
+                            class="fa fa-shopping-cart"></i></a></li>
             </ul>
-            
-
         </nav>
     </header>
 
-    <main style="margin-top: 8vh">
+    <!--AQUI VA EL FONDO-->
 
-        <div class="container" style="margin-top: 5%;">
-            <div class="d-flex justify-content-center h-100">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 style="color: #171f4a;">Iniciar Sesión</h3>
-                        <div class="d-flex justify-content-end social_icon">
-                            <span><i style="color: #171f4a" class="fab fa-facebook-square"></i></span>
-                            <span><i style="color: #171f4a" class="fab fa-google-plus-square"></i></span>
-                            <span><i style="color: #171f4a" class="fab fa-twitter-square"></i></span>
+    <main style="margin-top: 0vh; "><!-- Fondo mas margen entre menu y main -->
+        <div class="container">
+            <div class="row">
+                <style>
+                    .divider:after,
+                    .divider:before {
+                        content: "";
+                        flex: 1;
+                        height: 1px;
+                        background: #eee;
+                    }
+                </style>
+                <section class="vh-100">
+                    <div class="container py-5 h-100">
+                        <div class="row d-flex align-items-center justify-content-center h-100">
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                <img src="img/vinilo.png" class="img-fluid" >
+                            </div>
+                            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                                <form>
+                                    <h1>Inicio de sexsion</h1>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form1Example13">Ingresa tu email</label>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="form1Example23"
+                                            class="form-control form-control-lg" />
+                                        <label class="form-label" for="form1Example23">Ingresa tu contraseña</label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-around align-items-center mb-4">
+                                        <!-- Checkbox -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                                checked />
+                                            <label class="form-check-label" for="form1Example3"> Recuerdame </label>
+                                        </div>
+                                        <a href="#!">Se te olvido la contraseña?</a>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <!-- <button type="submit" class="btn btn-primary btn-lg btn-block">Ingresar</button> -->
+                                    <a class="btn btn-primary btn-lg btn-block"
+                                    href="index.html" role="button">Ingresar</a>
+                                    <div class="divider d-flex align-items-center my-4">
+                                        <p class="text-center fw-bold mx-3 mb-0 text-muted">O</p>
+                                    </div>
+                                    <a class="btn btn-primary btn-lg btn-block"
+                                        href="formulario_registro_new.html" role="button">Registrarme 
+                                    </a>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="input-group form-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Usuario">
-                            </div>
-                            <div class="input-group form-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                </div>
-                                <input type="password" class="form-control" placeholder="Contraseña">
-                            </div>
-                            <div class="row align-items-center remember">
-                                <input type="checkbox">Recordar
-                            </div>
-                            <div>
-                                <div class="form-group d-flex justify-content-center" style="margin-top: 15px;">
-                                    <a href="info_index_user.html"><button type = "button" class = "btn" style="background-color: white; color: black; font-weight: bold;">Entrar</button></a>
-                                    <a href="Admin_Index.html"><button type = "button" class = "btn" style="background-color: white; color: black;margin-left: 30px; font-weight: bold; ">Admin</button></a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-center links">
-                            ¿No tienes cuenta?<a href="Registro.html">Registrarse</a>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="#">¿Olvidaste la clave?</a>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
-
-
-
     </main>
+    <!-- Footer -->
     <footer>
         <div class="contenedor">
             <div class="sobre-mi">
@@ -140,6 +159,8 @@
                 </li>
             </div>
 
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         </div>
         <div class="copy">
