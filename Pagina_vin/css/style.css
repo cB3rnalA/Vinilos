@@ -53,27 +53,7 @@ h1,h2{
     min-width: 250px;
 }
 
-.btn {
-    background: linear-gradient(to right, #EA0909, #bd1e26);
-    background-color: #bd1e26;
-    border: none;
-    color: #ffffff;
-    padding: 6px 21px;
-    display: inline-block;
-    border-radius: 4px;
-    font-size: 13.5px;
-    text-decoration: none;
-    margin-top: 8px;
-    letter-spacing: 0.04px;
-    text-transform: uppercase;
-    cursor: pointer;
-    min-height: 40px;
-}
-.btn:hover {
-    background-color: #bd1e26;
-    background: linear-gradient(to right, #bd1e26, #EA0909);
-    color: #ffffff;
-}
+
 
 .result.box{
     padding: 0px;
