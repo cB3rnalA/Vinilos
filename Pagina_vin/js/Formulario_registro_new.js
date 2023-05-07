@@ -8,6 +8,7 @@ const expresiones = {
     direccion: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
     region: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
     comuna: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+    telefono: /^\d{9}$/, // 7 a 14 numeros.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     password: /^.{4,12}$/, // 4 a 12 digitos.
 
@@ -20,6 +21,7 @@ const campos = {
     direccion: false,
     region: false,
     comuna: false,
+    telefono: false,
     correo: false,
     password: false,
 
@@ -48,6 +50,9 @@ const validarFormulario = (e) => {
             break;
         case "correo":
             validarCampo(expresiones.correo, e.target, 'correo')
+            break;
+        case "telefono":
+            validarCampo(expresiones.telefono, e.target, 'telefono');
             break;
         case "password":
             validarCampo(expresiones.password, e.target, 'password');
@@ -106,7 +111,7 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 
     const terminos = document.getElementById('terminos');
-    if (campos.rut && campos.nombre && campos.apellido && campos.direccion && campos.region && campos.comuna && campos.correo && campos.password && terminos.checked) {
+    if (campos.rut && campos.nombre && campos.apellido && campos.direccion && campos.region && campos.comuna && campos.correo && campos.telefono && campos.password && terminos.checked) {
 
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

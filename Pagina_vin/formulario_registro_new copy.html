@@ -121,7 +121,16 @@
                         guion bajo.</p>
                 </div>
 
-                <br>
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono tiene 9 digitos
+                        dígitos.</p>
+                </div>  
 
                 <div class="formulario__grupo" id="grupo__password">
                     <label for="password" class="formulario__label">Contraseña</label>
@@ -142,11 +151,10 @@
                     </div>
                     <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
                 </div>
-                <div class="formulario__grupo" id="grupo__terminos">
-                    <label class="formulario__label">
+                
+                <div style ="font-weight: bold;" class="formulario__grupo" id="grupo__terminos">
                         <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
                         Acepto los <a href="#"> Terminos y Condiciones</a>
-                    </label>
                 </div>
 
                 <div class="formulario__mensaje" id="formulario__mensaje">
