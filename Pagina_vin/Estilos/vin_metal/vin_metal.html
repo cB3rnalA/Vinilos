@@ -23,8 +23,8 @@
 <body>
     <!-- menu -->
     <header style="height: 10vh; ">
-        <a href="../../index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="../../img/vinilo.png"
-            height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
+        <a href="index.html" class="logo fuente_vinilo" style="text-decoration: none;"><img src="../../img/vinilo.png"
+                height="60px" style="  padding-right: 20px;" alt="Logo"> Vinileins</a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
         <nav class="navbar">
@@ -33,35 +33,41 @@
                 <li> <a class="fuente_vinilo" style="text-decoration: none" href="#">Estilos +</a>
                     <ul>
                         <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="../vin_pop/vin_pop.html">Pop</a>
+                            href="../../Estilos/vin_pop/vin_pop.html">Pop</a>
                         </li>
                         <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="../vin_rock/vin_rock.html">Rock</a>
+                            href="../../Estilos/vin_rock/vin_rock.html">Rock</a>
                         </li>
                         <li><a class="fuente_vinilo" style="text-decoration: none"
-                                href="../vin_metal/vin_metal.html">Metal</a>
+                            href="../../Estilos/vin_metal/vin_metal.html">Metal</a>
                         </li>
                     </ul>
                 </li>
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="../../ofertas.html">Ofertas</a> </li>
-                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="../../Inicio_sesion.html"><i class="fa fa-user"></i></a></li>
-                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="../../carrito.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li> <a class="fuente_vinilo" style="text-decoration: none" href="ofertas.html">Ofertas</a> </li>
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="Inicio_sesion.html"><i
+                            class="fa fa-user"></i></a></li>
+                <li> <a class="button_perf fuente_vinilo" style="float: left;" href="carrito.html"><i
+                            class="fa fa-shopping-cart"></i></a></li>
             </ul>
-
-
         </nav>
     </header>
-    <main style="margin-top: 10vh;">
+
+    <!--AQUI VA EL FONDO-->
+
+    <main style="margin-top: 15vh; "><!-- Fondo mas margen entre menu y main -->
+        <!-- Contenido -->
+
         <div class="container">
             <div class="row">
+                <h3 class="fuente_vinilo" style="padding-left: 30px; font-size: 15px;">¿No encuentras tu vinilo? Pídelo <a style="font-size: 15px;" class="fuente_vinilo" href="buscarapi.html">Aquí</a></h3>
                 <!-- 1 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto  text-center" >
                         <a href="Estilos/vin_metal/vin_dreamtheather.html">
                             <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/dreamtheater octavarium.jpg" alt="meh2">
                             <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/dreamtheater octavarium atras.jpg" alt="meh">
                         </a>
-                        <h3>Dreamtheater - Octavarium</h3>
+                        <h3>Dreamtheater-Octavarium</h3>
                         <p style="font-size: 15px; line-height: 0;">Metal</p>
                         <div class="precio" ; style="text-decoration: line-through; font-size: 14px; color: red;">
                             $40.990
@@ -78,16 +84,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- 4 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
+
+                <!-- 2 card -->
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto   text-center">
                         <a href="Estilos/vin_metal/vin_helloween.html">
                             <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/helloween walls of jericho.jpg" alt="meh2">
                             <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/helloween walls of jericho atras.jpg" alt="meh">
                         </a>
-                        <h3>Helloween - Walls of Jericho</h3>
+                        <h3>Helloween-Walls of Jericho</h3>
                         <p style="font-size: 15px; margin-bottom: 1px;">Metal</p>
+                        <p></p>
                         <div class="precio" style="font-weight: bold; font-size: 15px;">$25.990</div>
+                        <p></p>
                         <div class="card-footer purchase-info">
                             <button type="button" class="btn">
                                 Agregar al carro <i class="fas fa-shopping-cart"></i>
@@ -97,48 +107,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
-                    <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_metal/vin_ironmaiden.html">
-                            <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/iron maiden piece of mind.jpg" alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/iron maiden piece of mind atras.jpg" alt="meh">
-                        </a>
-                        <div>
-                            <h3>Iron Maiden - Piece of Mind</h3>
-                            <p style="font-size: 15px; margin-bottom: 1px;">Metal</p>
-                            <div class="precio" style="font-weight: bold; font-size: 16px;">$25.990</div>
-                        </div>
-                        <div class="card-footer purchase-info">
-                            <button type="button" class="btn">
-                                Agregar al carro <i class="fas fa-shopping-cart"></i>
-                            </button>
-                            <a href="carrito.html"><button type="button" class="btn" ;
-                                    style="background-color: black;">Comprar</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
-                    <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_metal/vin_rammstein.html">
-                            <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/rammstein made in germany.jpg" alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/rammstein made in germany atras.jpg" alt="meh">
-                        </a>
-                        <div style="line-height: 1.3;">
-                            <h3>Rammstein - Made in Germany</h3>
-                            <p style="font-size: 15px; margin-bottom: 5px;">Metal</p>
-                            <div class="precio" style="font-weight: bold; font-size: 16px">$45.990</div>
-                        </div>
-                        <div class="card-footer purchase-info">
-                            <button type="button" class="btn">
-                                Agregar al carro <i class="fas fa-shopping-cart"></i>
-                            </button>
-                            <a href="carrito.html"><button type="button" class="btn" ;
-                                    style="background-color: black;">Comprar</button></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 12 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
+
+                <!-- 3 card -->
+                
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto text-center">
                         <a href="Estilos/vin_metal/vin_sepultura.html">
                             <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/sepultura arise.jpg" alt="meh2">
@@ -159,8 +131,35 @@
                         </div>
                     </div>
                 </div>
-                <!-- 14 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 p-5">
+
+                <!-- 4 card -->
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
+                    <div id="app" class="card  efecto text-center">
+                        <a href="Estilos/vin_metal/vin_rammstein.html">
+                            <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/rammstein made in germany.jpg" alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/rammstein made in germany atras.jpg" alt="meh">
+                        </a>
+                        <div style="line-height: 1.3;">
+                            <h3>Rammstein-Made in Ger</h3>
+                            <p style="font-size: 15px; margin-bottom: 5px;">Metal</p>
+                            <p></p>
+                            <div class="precio" style="font-weight: bold; font-size: 16px">$45.990</div>
+                            <p></p>
+                        </div>
+                        <div class="card-footer purchase-info">
+                            <button type="button" class="btn">
+                                Agregar al carro <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <a href="carrito.html"><button type="button" class="btn" ;
+                                    style="background-color: black;">Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 card -->
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto text-center">
                         <a href="Estilos/vin_metal/vin_slipknot.html">
                             <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/slipknot iowa.jpg" alt="meh2">
@@ -178,9 +177,32 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 6 card -->
+                
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
+                    <div id="app" class="card  efecto text-center">
+                        <a href="Estilos/vin_metal/vin_ironmaiden.html">
+                            <img class="card-img-top img-fluid no-gif " src="../../img/Caratulas/metal/iron maiden piece of mind.jpg" alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="../../img/Caratulas/metal/iron maiden piece of mind atras.jpg" alt="meh">
+                        </a>
+                        <div>
+                            <h3>Iron Maiden-Piece of Mind</h3>
+                            <p style="font-size: 15px; margin-bottom: 1px;">Metal</p>
+                            <div class="precio" style="font-weight: bold; font-size: 16px;">$25.990</div>
+                        </div>
+                        <div class="card-footer purchase-info">
+                            <button type="button" class="btn">
+                                Agregar al carro <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <a href="carrito.html"><button type="button" class="btn" ;
+                                    style="background-color: black;">Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </main>
     <!-- Footer -->
     <footer>
         <div class="contenedor">

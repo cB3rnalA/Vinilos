@@ -22,6 +22,30 @@
 
 </head>
 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinilos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Revisar iconos redes sociales -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/n5pm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--CREO QUE SE DEBE ELIMINAR-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_navbar_footer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
 <body>
     <!-- menu -->
     <header style="height: 10vh; ">
@@ -46,7 +70,6 @@
                     </ul>
                 </li>
                 <li> <a class="fuente_vinilo" style="text-decoration: none" href="ofertas.html">Ofertas</a> </li>
-                <li> <a class="fuente_vinilo" style="text-decoration: none" href="buscarapi.html">Buscar</a> </li>
                 <li> <a class="button_perf fuente_vinilo" style="float: left;" href="Inicio_sesion.html"><i
                             class="fa fa-user"></i></a></li>
                 <li> <a class="button_perf fuente_vinilo" style="float: left;" href="carrito.html"><i
@@ -57,31 +80,12 @@
 
     <!--AQUI VA EL FONDO-->
 
-    <main style="margin-top: 10vh; "><!-- Fondo mas margen entre menu y main -->
+    <main style="margin-top: 15vh; "><!-- Fondo mas margen entre menu y main -->
         <!-- Contenido -->
-        <!-- Carousel -->
-        <div style="padding-top: 30px; padding-bottom: 70px;" id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMG/carrusel.png" height="220px" alt="Los Angeles" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="IMG/carrusel1.png" height="220px" alt="Chicago" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="IMG/carrusel2.png" height="220px" alt="New York" class="d-block" style="width:100%">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-        <!-- End carusel -->
+
         <div class="container">
             <div class="row">
+                <h3 class="fuente_vinilo" style="padding-left: 30px; font-size: 15px;">¿No encuentras tu vinilo? Pídelo <a style="font-size: 15px;" class="fuente_vinilo" href="buscarapi.html">Aquí</a></h3>
                 <!-- 1 card -->
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto  text-center" >
@@ -89,7 +93,7 @@
                             <img class="card-img-top img-fluid no-gif " src="img/Caratulas/metal/dreamtheater octavarium.jpg" alt="meh2">
                             <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/dreamtheater octavarium atras.jpg" alt="meh">
                         </a>
-                        <h3>Dreamtheater - Octavarium</h3>
+                        <h3>Dreamtheater-Octavarium</h3>
                         <p style="font-size: 15px; line-height: 0;">Metal</p>
                         <div class="precio" ; style="text-decoration: line-through; font-size: 14px; color: red;">
                             $40.990
@@ -114,7 +118,7 @@
                             <img class="card-img-top img-fluid no-gif" src="img/Caratulas/pop/david bowie let's dance.jpg" alt="meh2">
                             <img class="card-img-top img-fluid  gif" src="img/Caratulas/pop/david bowie let's dance atras.jpg" alt="meh">
                         </a>
-                        <h3>David Bowie Let´s dance</h3>
+                        <h3>David Bowie - Let´s dance</h3>
                         <p style="font-size: 15px; line-height: 0;">Pop</p>
                         <div class="precio" ; style="text-decoration: line-through; font-size: 14px; color: red;">
                             $42.990
@@ -162,9 +166,11 @@
                             <img class="card-img-top img-fluid no-gif " src="img/Caratulas/metal/helloween walls of jericho.jpg" alt="meh2">
                             <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/helloween walls of jericho atras.jpg" alt="meh">
                         </a>
-                        <h3>Helloween - Walls of Jericho</h3>
+                        <h3>Helloween-Walls of Jericho</h3>
                         <p style="font-size: 15px; margin-bottom: 1px;">Metal</p>
+                        <p></p>
                         <div class="precio" style="font-weight: bold; font-size: 15px;">$25.990</div>
+                        <p></p>
                         <div class="card-footer purchase-info">
                             <button type="button" class="btn">
                                 Agregar al carro <i class="fas fa-shopping-cart"></i>
@@ -207,7 +213,7 @@
                             <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/iron maiden piece of mind atras.jpg" alt="meh">
                         </a>
                         <div>
-                            <h3>Iron Maiden - Piece of Mind</h3>
+                            <h3>Iron Maiden-Piece of Mind</h3>
                             <p style="font-size: 15px; margin-bottom: 1px;">Metal</p>
                             <div class="precio" style="font-weight: bold; font-size: 16px;">$25.990</div>
                         </div>
@@ -247,7 +253,7 @@
                             <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/rammstein made in germany atras.jpg" alt="meh">
                         </a>
                         <div style="line-height: 1.3;">
-                            <h3>Rammstein - Made in Germany</h3>
+                            <h3>Rammstein-Made in Ger</h3>
                             <p style="font-size: 15px; margin-bottom: 5px;">Metal</p>
                             <div class="precio" style="font-weight: bold; font-size: 16px">$45.990</div>
                         </div>
@@ -281,19 +287,19 @@
                     </div>
                 </div>
                 <!-- 10 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5" style="height: 300px;">
                     <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_rock/vin_incubus.html">
-                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/rock/incubus morning view.jpg" alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/rock/incubus morning view atras.jpg" alt="meh">
+                        <a href="Estilos/vin_rock/vin_redhotchilipepers.html">
+                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/rock/red hot chili peppers greatest hits.jpg"
+                                alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/rock/red hot chili peppers greatest hits atras.jpg"
+                                alt="meh">
                         </a>
-                        <h3>Incubus - Morning view</h3>
-                        <p style="font-size: 15px; line-height: 0;">Rock</p>
-                        <div class="precio" ; style="text-decoration: line-through; font-size: 14px; color: red;">
-                            $35.990
-                        </div>
-                        <div style="font-weight: bold;">
-                            <p>Oferta: $30.990</p>
+                        <div style="line-height: 1.3;">
+                            <h3>Red Hot Chili Peppers - Greatest hits</h3>
+                            <p style="font-size: 15px; margin-bottom: 5px;">Rock</p>
+                            <div class="precio" style="font-weight: bold; font-size: 16px;">$29.990</div>
                         </div>
                         <div class="card-footer purchase-info">
                             <button type="button" class="btn">
@@ -325,29 +331,29 @@
                     </div>
                 </div>
                 <!-- 12 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
+                
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5" >
                     <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_metal/vin_sepultura.html">
-                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/metal/sepultura arise.jpg" alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/sepultura arise atras.jpg" alt="meh">
+                        <a href="Estilos/vin_pop/vin_madonna.html">
+                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/pop/madonna the inmaculate collection.jpg"
+                                alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/pop/madonna the inmaculate collection atras.jpg"
+                                alt="meh">
                         </a>
-                        <h3>Sepultura - Arise</h3>
-                        <p style="font-size: 15px; line-height: 0;">Metal</p>
-                        <div class="precio" ; style="text-decoration: line-through; color: red;">$35.990</div>
-                        <div style="font-weight: bold;">
-                            <p>Oferta: $30.990</p>
-                        </div>
-                        <div class="card-footer purchase-info">
-                            <button type="button" class="btn">
-                                Agregar al carro <i class="fas fa-shopping-cart"></i>
-                            </button>
-                            <a href="carrito.html"><button type="button" class="btn" ;
-                                    style="background-color: black;">Comprar</button></a>
+                        <h3>Madonna - The inmaculate collection</h3>
+                        <div style="line-height: 1.3;">
+                            <p style="font-size: 15px; margin-bottom: 5px;">pop</p>
+                            <div class="precio" style="font-weight: bold; font-size: 16px;">$34.990</div>
+                            <div class="card-footer purchase-info">
+                                <button type="button" class="btn">
+                                    Agregar al carro <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <a href="carrito.html"><button type="button" class="btn" ;
+                                        style="background-color: black;">Comprar</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- 13 card -->
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
@@ -427,42 +433,18 @@
                 </div>
 
                 <!-- 17 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5" >
-                    <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_pop/vin_madonna.html">
-                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/pop/madonna the inmaculate collection.jpg"
-                                alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/pop/madonna the inmaculate collection atras.jpg"
-                                alt="meh">
-                        </a>
-                        <h3>Madonna - The inmaculate collection</h3>
-                        <div style="line-height: 1.3;">
-                            <p style="font-size: 15px; margin-bottom: 5px;">pop</p>
-                            <div class="precio" style="font-weight: bold; font-size: 16px;">$34.990</div>
-                            <div class="card-footer purchase-info">
-                                <button type="button" class="btn">
-                                    Agregar al carro <i class="fas fa-shopping-cart"></i>
-                                </button>
-                                <a href="carrito.html"><button type="button" class="btn" ;
-                                        style="background-color: black;">Comprar</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 18 card -->
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5" style="height: 300px;">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
                     <div id="app" class="card  efecto text-center">
-                        <a href="Estilos/vin_rock/vin_redhotchilipepers.html">
-                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/rock/red hot chili peppers greatest hits.jpg"
-                                alt="meh2">
-                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/rock/red hot chili peppers greatest hits atras.jpg"
-                                alt="meh">
+                        <a href="Estilos/vin_metal/vin_sepultura.html">
+                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/metal/sepultura arise.jpg" alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/metal/sepultura arise atras.jpg" alt="meh">
                         </a>
-                        <div style="line-height: 1.3;">
-                            <h3>Red Hot Chili Peppers - Greatest hits</h3>
-                            <p style="font-size: 15px; margin-bottom: 5px;">Rock</p>
-                            <div class="precio" style="font-weight: bold; font-size: 16px;">$29.990</div>
+                        <h3>Sepultura - Arise</h3>
+                        <p style="font-size: 15px; line-height: 0;">Metal</p>
+                        <div class="precio" ; style="text-decoration: line-through; color: red;">$35.990</div>
+                        <div style="font-weight: bold;">
+                            <p>Oferta: $30.990</p>
                         </div>
                         <div class="card-footer purchase-info">
                             <button type="button" class="btn">
@@ -473,8 +455,92 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- 18 card -->
+
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 p-5">
+                    <div id="app" class="card  efecto text-center">
+                        <a href="Estilos/vin_rock/vin_incubus.html">
+                            <img class="card-img-top img-fluid no-gif " src="img/Caratulas/rock/incubus morning view.jpg" alt="meh2">
+                            <img class="card-img-top img-fluid  gif" src="img/Caratulas/rock/incubus morning view atras.jpg" alt="meh">
+                        </a>
+                        <h3>Incubus - Morning view</h3>
+                        <p style="font-size: 15px; line-height: 0;">Rock</p>
+                        <div class="precio" ; style="text-decoration: line-through; font-size: 14px; color: red;">
+                            $35.990
+                        </div>
+                        <div style="font-weight: bold;">
+                            <p>Oferta: $30.990</p>
+                        </div>
+                        <div class="card-footer purchase-info">
+                            <button type="button" class="btn">
+                                Agregar al carro <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <a href="carrito.html"><button type="button" class="btn" ;
+                                    style="background-color: black;">Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="contenedor">
+            <div class="sobre-mi">
+                <h2 class="titulos-footer">Tienda</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At a quos error sapiente asperiores sed
+                    non, accusamus quaerat praesentium! Laudantium saepe doloribus aut rem dolore minima. Quibusdam
+                    expedita nisi eius.</p>
+                <ul class="redes-sociales"><!-- redes sociales -->
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="contactanos">
+                <h2 class="titulos-footer">Contáctanos</h2>
+                <ul class="informacion-contacto">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>Una direccion random<br> Concepcion, Biobio</p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>+123456789 <br> +999999999</p>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>correo@duocuc.cl</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="navegacion">
+                <h2 class="titulos-footer">Medios de pago</h2>
+                <li>
+                    <i class="fa fa-cc-visa" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-mastercard" style="font-size:30px; color:white"></i>
+                    <i class="fa fa-cc-amex" style="font-size:30px;color:white"></i>
+                    <i class="fa fa-cc-diners-club" style="font-size:30px; color:white"></i>
+                </li>
+            </div>
+
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        </div>
+        <div class="copy">
+            Copyright © 2023 Vinilos por 'sopaipillas'
+        </div>
+    </footer>
+
+</body>
+
+</html>
     </main>
     <!-- Footer -->
     <footer>
