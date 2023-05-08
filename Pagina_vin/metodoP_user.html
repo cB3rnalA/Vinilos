@@ -59,29 +59,32 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div>
-                <div class="col-25 met ">
-                    <label for="fname">Agregar nuevo medio de pago</label>
-                    <div class="icon-container">
-                        <i class="fab fa-cc-visa" style="color:navy;"></i>
-                        <i class="fab fa-cc-amex" style="color:blue;"></i>
-                        <i class="fab fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fab fa-cc-discover" style="color:orange;"></i>
+        <form name="addForm" class="formulario" id="formulario" method="get">
+            <div class="container">
+                <div>
+                    <div class="col-25 met ">
+                        <label for="fname">Agregar nuevo medio de pago</label>
+                        <div class="icon-container">
+                            <i class="fab fa-cc-visa" style="color:navy;"></i>
+                            <i class="fab fa-cc-amex" style="color:blue;"></i>
+                            <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fab fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label>Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Wacoldo Soto">
+                                    <label>Numero de tarjeta</label>
+                                    <input type="text" name="NumTarj" id="NumTarj" placeholder="1111-2222-3333-4444">
+                                    <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
+                                    <input style="width: 50%;" type="text" name="FechaEx" id="FechaEx" placeholder="12/26"><input
+                                    style="width: 50%;" type="text" name="CCV" id="ccv" placeholder="111">
+                            <div class="der"><input type="submit" onclick="ValidarFormulario()" value="Guardar" class="btn"></div>
+                        
+                        
                     </div>
-                    <label>Nombre</label>
-                                <input type="text" name="Nombre" placeholder="Wacoldo Soto">
-                                <label>Numero de tarjeta</label>
-                                <input type="text" name="Numero de tarjeta" placeholder="1111-2222-3333-4444">
-                                <label style="width: 50%;">Fecha Expiración</label><label style="width: 50%;">CCV</label>
-                                <input style="width: 50%;" type="text" name="Fecha Expiración" placeholder="12/26"><input
-                                style="width: 50%;" type="text" name="CCV" placeholder="111">
-                        <div class="der"><input type="submit" value="Guardar" class="btn"></div>
-                    
-                    
                 </div>
             </div>
-        </div>
+            <script src="js/MetodoPago.js"></script>
+        </form>
     </main>
     <!-- Footer -->
     <!-- Footer -->
