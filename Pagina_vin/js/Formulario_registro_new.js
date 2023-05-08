@@ -3,9 +3,9 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
     rut: /^([1-9]{1}|([1-9]{1}[0-9]{1}))\.(\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)/, // EL rut comoletio con . y -
-    nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+    nombre: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
-    direccion: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+    direccion: /^[a-zA-ZÀ-ÿ\s]{4,40}[0-9]{2,5}$/, // Letras y espacios, pueden llevar acentos.
     region: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
     comuna: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
     telefono: /^\d{9}$/, // 7 a 14 numeros.
