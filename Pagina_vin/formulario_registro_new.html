@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="css/estilo_registro_new.css">
+    <link rel="stylesheet" href="css/nico.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
@@ -44,74 +45,138 @@
     </header>
 
     <main style="margin-top: 12vh;">
-    <form action="Formulario_registro_new.html" class="formulario" id="formulario" method="get">
         <div class="container">
-            <div class="row">
-                <h3><b>Registro</b></h3>
-                <h6>Por favor completa el formulario para crear una cuenta.</h6>
-                    <hr>
-                <div class="col-sm-6" >
-                
-
-                    <div class="formulario_registro" id="registro_rut">
-                        <label for="rut" class="formulario_label"><b>Rut</b></label>
-                        <input type="text" placeholder="Ingrese su rut Ej: 18.985.581-1" name="nombre" id="nombre" >
-                        </div>
-
-                    <div class="formulario_registro" id="registro_nombre">
-                    <label for="nombre" class="formulario_label"><b>Nombre</b></label>
-                    <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" >
+            <h3><b>Registro</b></h3>
+            <h6>Por favor completa el formulario para crear una cuenta.</h6>
+            <hr>
+            <form action="Formulario_registro_new copy.html" class="formulario" id="formulario" method="get">
+                <div class="formulario__grupo" id="grupo__rut">
+                    <label for="rut" class="formulario__label"><b>Rut</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su rut Ej: 18.985.581-1" name="rut" id="rut"
+                            class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-
-                    <label for="apellido"><b>Apellido</b></label>
-                    <input type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido" >
-
-                    <label for="Correo"><b>Email</b></label>
-                    <input type="text" placeholder="Ingrese su correo" name="email" id="email" required>
-                    </div>
-
-                    <div class="col-sm-6">
-
-                    <label for="direccion"><b>Dirección</b></label>
-                    <input type="text" placeholder="Ingrese su dirección Ej: Calle dos 123" name="direccion" id="direccion" >
-
-                    <label for="region"><b>Región</b></label>
-                    <input type="text" placeholder="Ingrese su región" name="region" id="region" >
-
-                    <label for="comuna"><b>Comuna</b></label>
-                    <input type="text" placeholder="Ingrese su comuna" name="comuna" id="comuna" >
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Ingrese su contraseña" name="psw" id="psw" >
-
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Reingrese su contraseña" name="psw-repeat" id="psw-repeat" >
-                    
+                    <p class="formulario__input-error">Debe ingresar su RUT con puntos y con guión
+                    </p>
                 </div>
-                    <div class="formulario_grupo" id="grupo_terminos" style="text-align: center; margin-top: 10px;">
-                    <label class="formulario__label">
-                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
-                        Acepto los <a href="#"> Terminos y Condiciones</a>
-                    </label>
-                    </div>
 
-                    <div style="justify-content: center; text-align: center; margin-top: 10px;">
-                        <button type="submit" class="registerbtn" style="width: 40%; justify-content: center;">Registrarse</button>
+                <div class="formulario__grupo" id="grupo__direccion">
+                    <label for="direccion" class="formulario__label"><b>Dirección</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su dirección Ej: Calle dos 123" name="direccion"
+                            id="direccion" class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
+                    <p class="formulario__input-error">La calle debe tener de 4 a 40 caracteres y la numeración de 2 a 5 números</p>
+                </div>
 
-                    <div class="container signin" style="width: 39.5%; padding-bottom: 1px; padding-top: 10px;">
-                        <p>¿Ya tienes una cuenta? <a href="Inicio_sesion.html">Inicia sesión</a>.</p>
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label"><b>Nombre</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre"
+                            class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
+                    <p class="formulario__input-error">El nombre debe tener de 3 a 40 Caracteres</p>
+                </div>
 
-                    
+                <div class="formulario__grupo" id="grupo__region">
+                    <label for="region" class="formulario__label"><b>Región</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su región" name="region" id="region"
+                            class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La región debe tener de 4 a 40 caracteres</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label"><b>Apellido</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido"
+                            class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido debe tener de 4 a 40 caracteres</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__comuna">
+                    <label for="comuna" class="formulario__label"><b>Comuna</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" placeholder="Ingrese su comuna" name="comuna" id="comuna"
+                            class="formulario__input">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La comuna debe tener de 4 a 40 caracteres</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" 
+                        placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo ingresado no es válido.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El teléfono debe tener 9 digitos
+                        </p>
+                </div>  
+
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password"
+                            placeholder="Ingrese su contraseña">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener de 4 a 12 dígitos.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2"
+                            placeholder="Reingrese su contraseña">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Las contraseñas deben ser iguales.</p>
+                </div>
                 
-            </div>
+                <div style ="font-weight: bold;" class="formulario__grupo" id="grupo__terminos">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los <a href="#"> Términos y Condiciones</a>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena los campos faltantes. </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Registrarse</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                    </p>
+                </div>
+                <div class=" signin formulario__grupo formulario__grupo-btn-enviar"
+                    style=" padding-bottom: 1px; padding-top: 10px;">
+                    <p class="formulario__bt">¿Ya tienes una cuenta? <a href="Inicio_sesion.html">Inicia sesión</a>.
+                    </p>
+                </div>
+            </form>
         </div>
-<script src="js/Formulario_registro_new.js">
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/Formulario_registro_new.js"></script>
 
-</script>
-
-    </form>
-</main>
 </body>
 
 </html>
